@@ -21,8 +21,8 @@
         <h3 class="text-center">Book your seat today!</h3>
         <hr>
         <div class="col text-center">
-          <a href="/tables"><button class="btn btn-danger btn-lg" id="search-btn"><i class="fas fa-pizza-slice"></i> View Tables</button></a>
-          <a href="/"><button class="btn btn-danger btn-lg" id="add-btn"><i class="fas fa-home"></i> Go Home</button></a>
+          <a href="/tables"><button class="btn btn-danger btn-lg"><i class="fas fa-pizza-slice"></i> View Tables</button></a>
+          <a href="/"><button class="btn btn-danger btn-lg"><i class="fas fa-home"></i> Go Home</button></a>
         </div>
         </div>
     
@@ -45,12 +45,12 @@
   
                 <div class="form-group">
                   <label for="role">Number of Guests</label>
-                  <input type="text" class="form-control" id="guests">
+                  <input type="text" class="form-control" id="guestNumber">
                 </div>
   
                 <div class="form-group">
                   <label for="age">Phone Number</label>
-                  <input type="text" class="form-control" id="phonenumber">
+                  <input type="text" class="form-control" id="phoneNumber">
                 </div>
   
                 <div class="form-group">
@@ -82,9 +82,9 @@
       event.preventDefault();
       var newTable = {
         name: $("#name").val().trim(),
-        phone: $("#phone").val().trim(),
+        phone: $("#phoneNumber").val(),
         email: $("#email").val().trim(),
-        guestNumber: $("#guestNumber").val().trim(),
+        guestNumber: $("#guestNumber").val()
       };
 
       // Question: What does this code do??
